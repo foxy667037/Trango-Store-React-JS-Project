@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Abel");
+
+.logoText {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+}
+.logoTextSpan {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+}
+.links {
+  font-family: "Abel", sans-serif;
+}
+.links li {
+  overflow: hidden;
+  height: 25px;
+}
+.text:hover .letter,
+.text.play .letter {
+  transform: translateY(-100%);
+}
+
+.text .block:last-child {
+  color: rgba(255, 128, 0, 0.955);
+}
+.text .letter {
+  display: inline-block;
+  transition: transform 0.6s cubic-bezier(0.075, 0, 0.024, 1);
+}
+.letter:nth-child(1) {
+  transition-delay: 0s;
+}
+.letter:nth-child(2) {
+  transition-delay: 0.03s;
+}
+.letter:nth-child(3) {
+  transition-delay: 0.06s;
+}
+.letter:nth-child(4) {
+  transition-delay: 0.09s;
+}
+.letter:nth-child(5) {
+  transition-delay: 0.12s;
+}
+.letter:nth-child(6) {
+  transition-delay: 0.15s;
+}
+.letter:nth-child(7) {
+  transition-delay: 0.18s;
+}
+.letter:nth-child(8) {
+  transition-delay: 0.21s;
+}
+.letter:nth-child(9) {
+  transition-delay: 0.24s;
+}
+.letter:nth-child(10) {
+  transition-delay: 0.27s;
+}
+.letter:nth-child(11) {
+  transition-delay: 0.30s;
+}
+.letter:nth-child(12) {
+  transition-delay: 0.33s;
+}
+.letter:nth-child(13) {
+  transition-delay: 0.36s;
+}
+
+/* Basic Hamburger styling */
+.hidden {
+  display: none;
+}
+
+/* Show the hamburger button on screens up to 900px */
+@media (max-width: 900px) {
+  .hidden {
+    display: block;
+  }
+}
+
+/* Transformations for the cross */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-48deg) translate(7px, -7px);
+}
+
+/* menu Overlay */
+.menu-overlay.open {
+  transform: translateX(100%);
+}
+
+.menu-heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-links li {
+  margin: 0.5rem 0;
+}
+
+.menu-links li a {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-links li a:hover {
+  color: rgba(255, 128, 0, 0.955);
+}
+
+/* Cross Button for Closing */
+.close-btn span:first-child {
+  transform: rotate(45deg);
+}
+
+.close-btn span:last-child {
+  transform: rotate(-45deg);
+}
