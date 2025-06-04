@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .arrivalsHeading{
+      font-weight: 600;
+    }
+
+    .faq-item {
+      position: relative;
+    }
+  
+    .faq-item::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px; /* Thickness of the border */
+      transition: width 0.5s ease-in-out;
+    }
+  
+    .faq-item:hover::after {
+      width: 100%;
+    }
+  
+    .faq-item:nth-child(1):hover::after {
+      background-color: #1e40af; /* Blue border for the first item */
+    }
+  
+    .faq-item:nth-child(2):hover::after {
+      background-color: #16a34a; /* Green border for the second item */
+    }
+  
+    .faq-item:nth-child(3):hover::after {
+      background-color: #f97316; /* Orange border for the third item */
+    }
+    .faq-item:nth-child(4):hover::after {
+      background-color: #cb1ffa; /* Orange border for the third item */
+    }
+  }
+  

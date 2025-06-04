@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+.cart-right {
+  border-left: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+.item-details {
+  font-family: "Urbanist", serif;
+}
+
+.item-details span,
+.summary-item span,
+.summary-total span,
+.shipping-select {
+  font-family: "Red Hat Display", serif;
+}
+
+.quantity-control button,
+.checkout-button,
+.back-to-shop-button,
+.remove-button,
+.checkout-input {
+  font-family: "Quicksand", serif;
+}
+
+.summary-item,
+.summary-total {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Default layout (desktop) */
+.cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* For screens 1024px and below (tablet and smaller) */
+@media (max-width: 1024px) {
+  .cart {
+    flex-direction: column;
+    align-items: center; /* Optional: To center-align the items */
+  }
+
+  .cart-left {
+    width: 100%; /* Take full width */
+    margin-bottom: 1rem; /* Add spacing between sections */
+  }
+
+  .cart-right {
+    width: 100%;
+    border-left: none;
+    border-top: 1px dashed rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* For screens 496 and below (tablet and smaller) */
+@media (max-width: 496px) {
+  .cart-header{
+    text-align: center;
+  }
+}
+
+.Toastify__toast {
+  border-top: 4px solid orange; /* Initial border */
+  transition: all 0.5s ease; /* Smooth transition */
+}
+
+.Toastify__toast--success {
+  border-top: 4px solid orange; /* Border color for success */
+}
+
+.Toastify__toast--error {
+  border-top: 4px solid orange; /* Border color for error */
+}
+
+/* For the border shrinking effect */
+.Toastify__toast--visible {
+  animation: shrinkBorder 3s forwards;
+}
+
+@keyframes shrinkBorder {
+  0% {
+    border-top-width: 4px;
+  }
+  100% {
+    border-top-width: 0px; /* Shrink to 0 */
+  }
+}
